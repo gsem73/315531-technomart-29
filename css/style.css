@@ -128,6 +128,16 @@ img {
   color: var(--basic-white);
 }
 
+.logo{
+  display: inline-block;
+  background-color: var(--basic-red);
+  padding: 12px 56px;
+}
+
+.logo-img {
+  display: block;
+}
+
 .header-control-active {
   background-color: var(--basic-red);
 }
