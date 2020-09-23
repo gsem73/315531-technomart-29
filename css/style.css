@@ -111,6 +111,24 @@ img {
   height: auto;
 }
 
+.page-html {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  align-content: start;
+  min-height: 100%;
+
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* Header */
 
 .header {
@@ -128,10 +146,11 @@ img {
   color: var(--basic-white);
 }
 
-.logo{
+.logo {
   display: inline-block;
-  background-color: var(--basic-red);
   padding: 12px 56px;
+
+  background-color: var(--basic-red);
 }
 
 .logo-img {
@@ -149,6 +168,14 @@ img {
   color: var(--basic-white);
 
   background-color: var(--basic-green);
+}
+
+.header-content {
+  display: grid;
+
+  column-gap: 20px;
+
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .header-text {
@@ -206,7 +233,8 @@ img {
 
 .header-nav {
   list-style: none;
-
+  padding: 0;
+  margin: 0;
   background-color: var(--background-dark);
 }
 
@@ -242,24 +270,41 @@ img {
   text-transform: uppercase;
 }
 
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
 .promo-material {
   background-color: var(--special-yellow-dark);
+  order: 1;
 }
 
 .promo-instrument {
   background-color: var(--special-blue);
+  order: 2;
 }
 
 .promo-technic {
   background-color: var(--special-lilac);
+  order: 3;
 }
+
+.promo-catalog {
+  order: 4;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
 
 .promo-discount {
   background-color: var(--special-green);
+  order: 5;
 }
 
 .promo-delivery {
   background-color: var(--special-yellow-light);
+  order: 6;
 }
 
 .section-header {
@@ -307,8 +352,14 @@ img {
   background-color: var(--basic-red);
 }
 
-.card-list {
+.grid-4 {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  grid-template-columns: repeat(4,1fr);
 }
 
 .card-title {
@@ -342,10 +393,6 @@ img {
   border: none;
 }
 
-.partner-list {
-  list-style: none;
-}
-
 .service {
   background-color: var(--background-light);
 }
@@ -363,6 +410,27 @@ img {
   line-height: 24px;
   font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
+}
+
+.slider-tab {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.slide-title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color:var(--text-dark);
+}
+
+
+.slider-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .service-slider {
@@ -403,6 +471,11 @@ img {
   background-color: var(--special-red);
 }
 
+
+.special-grid {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
 .contact-title {
   font-size: 30px;
   line-height: 30px;
@@ -422,6 +495,16 @@ img {
   font-size: 13px;
   line-height: 24px;
   font-family: PTSans, Arial, sans-serif;
+}
+
+.grid-2 {
+  display:grid;
+  grid-template-columns: auto 1fr;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .footer-content {
@@ -462,6 +545,7 @@ img {
   line-height: 18px;
   font-family: Cuprum, Arial, sans-serif;
   color: var(--basic-white);
+  margin: 0;
 }
 
 .social {
@@ -488,7 +572,7 @@ img {
 .pagination-item-active {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-white);
 
   background-color: var(--basic-red);
@@ -499,7 +583,7 @@ img {
 .pagination-item {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
 
   border: 1px solid var(--basic-graylighter);
@@ -520,7 +604,7 @@ img {
 .breadcrumbs-link {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
 }
@@ -542,7 +626,7 @@ img {
 .filter-title {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
 
@@ -556,7 +640,7 @@ img {
 .sort-title {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
 }
@@ -568,19 +652,18 @@ img {
 .sort-menu-link-active {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-red);
   text-transform: uppercase;
 
   background-color: transparent;
   border: none;
-
 }
 
 .sort-menu-link {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: PTSans, Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
 
