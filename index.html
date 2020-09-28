@@ -12,11 +12,14 @@
       <nav>
         <div class="header-panel">
           <div class="container">
-            <a class="logo" href="index.html"><img class="logo-img" src="img/logo-technomart.svg" width="106" height="16" alt="Логотип интернет-магазина Техномарт"></a>
-            <!-- Здесь будет форма поиска -->
-            <a class="header-control" href="">Закладки: <span>0</span></a>
-            <a class="header-control" href="">Корзина: <span>0</span></a>
-            <a class="buy-button" href="">Оформить заказ</a>
+            <div class="panel-flex">
+              <a class="logo" href="index.html"><img class="logo-img" src="img/logo-technomart.svg" width="106" height="16" alt="Логотип интернет-магазина Техномарт"></a>
+              <!-- Здесь будет форма поиска -->
+              <input class="panel-search" type="text" placeholder="Поиск">
+              <a class="header-control" href="">Закладки: <span>0</span></a>
+              <a class="header-control" href="">Корзина: <span>0</span></a>
+              <a class="buy-button" href="">Оформить заказ</a>
+            </div>
           </div>
         </div>
         <div class="container header-content">
@@ -95,7 +98,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Популярные товары:</h2>
-            <a class="section-button" href="">Все популярные товары</a>
+            <p><a class="section-button" href="">Все популярные товары</a></p>
           </div>
           <ul class="grid-4">
             <li>
@@ -146,7 +149,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Популярные Производители:</h2>
-            <a class="section-button" href="">Все производители</a>
+            <p><a class="section-button" href="">Все производители</a></p>
           </div>
           <ul class="grid-4">
             <li><a href =""><img src= "img/logo-bosch.png" width="120" height="60" alt="Логотип компании Bosch"></a></li>
@@ -250,7 +253,7 @@
               <li><a class="footer-link" href="" title="facebook">facebook</a></li>
               <li><a class="footer-link" href="" title="instagram">instagram</a></li>
             </ul>
-            <div>
+            <div class="footer-feedback">
               <p class="footer-copyright">Обратная связь:<br><a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
               <p class="footer-copyright">Разработано —<br><a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
             </div>
