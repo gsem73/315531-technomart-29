@@ -86,6 +86,7 @@
   --basic-black: #000000;
   --transparent-black: rgba(0, 0, 0, 0.25);
 
+  --slate-gray: rgba(255, 255, 255, 0.3);
   --dark-gray: #a9a9a9;
   --silver-gray: #c5c5c5;
   --light-gray:  #e5e5e5;
@@ -270,17 +271,15 @@ img {
 
   margin-top: auto;
   margin-bottom: auto;
+
+  fill: var(--slate-gray);
 }
 
-.icon-search-path {
-  fill: var(--transparent-white);
-}
-
-.header-search:hover .icon-search-path {
+.header-input:hover + .icon-search {
   fill: var(--basic-white);
 }
 
-.header-input:focus + .icon-search .icon-search-path {
+.header-input:focus + .icon-search {
   fill: var(--basic-red);
 }
 
@@ -325,28 +324,19 @@ img {
 
   margin-top: auto;
   margin-bottom: auto;
+
+  fill: var(--slate-gray);
 }
 
-.icon-favorites-path,
-.icon-cart-path {
-  fill: var(--transparent-white);
-}
-
-.icon-favorites-path,
-.icon-cart-path {
-  fill: var(--transparent-white);
-}
-
-.button-count:hover .icon-favorites-path,
-.button-count:hover .icon-cart-path {
+.button-count:hover .icon-favorites,
+.button-count:hover .icon-cart {
   fill: var(--basic-white);
 }
 
-.button-count:active .icon-favorites-path,
-.button-count:active .icon-cart-path {
-  fill: var(--transparent-white);
+.button-count:active .icon-favorites,
+.button-count:active .icon-cart {
+  fill: var(--slate-gray);
 }
-
 
 /* Кнопка оформления заказа */
 
