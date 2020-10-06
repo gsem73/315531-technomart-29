@@ -105,6 +105,7 @@
   --hover-green: #5fbb2d;
   --active-green: #518534;
 
+  --moderate-blue: #3d546f;
   --violet-blue: #32425c;
   --night-blue: #293449;
   --sapphire-blue: #161929;
@@ -182,10 +183,8 @@ img {
 .header {
   background-color: var(--aluminum-light);
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
-
-/* -------------------------------------------------------------------------------------------------------------- */
 
 /* Header panel */
 
@@ -356,9 +355,6 @@ img {
   background-color: var(--basic-green);
 }
 
-/* -------------------------------------------------------------------------------------------------------------- */
-
-
 /* Header content */
 
 .header-content {
@@ -367,9 +363,8 @@ img {
   column-gap: 20px;
 
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 58px;
   padding-top: 46px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .header-text {
@@ -378,8 +373,8 @@ img {
   line-height: 23px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-red);
-  margin: 0;
-  padding: 0 30px;
+  margin: 0 30px;
+  padding: 0;
 }
 
 .header-phone {
@@ -390,8 +385,15 @@ img {
   color: var(--basic-red);
   display: block;
   border: 3px solid var(--basic-white);
+  box-sizing: border-box;
   max-width: 270px;
-  padding: 6px 36px;
+  padding: 4px 36px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-phone {
+  margin-right: 16px;
 }
 
 .header-addr {
@@ -399,18 +401,19 @@ img {
   line-height: 24px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--violet-blue);
+  margin: 4px 12px;
   padding: 0;
-  margin: 0;
-  padding-left: 10px;
 }
+
+/* Кнопки регистрации, входа и выхода */
 
 .user-panel {
-  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-.login-button,
-.user-button,
-.reg-button {
+.user-panel-button {
   font-size: 21px;
   line-height: 21px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -418,32 +421,91 @@ img {
 
   background-color: var(--basic-white);
   padding: 12px 24px;
-  display: block;
-}
-
-.log-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display:flex;
-  justify-content: flex-end;
-}
-
-.log-menu-item {
+  display: flex;
+  justify-items: center;
   margin-left: 10px;
+
 }
+
+.logout-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-login,
+.icon-user,
+.icon-logout {
+  fill: var(--silver-gray);
+}
+
+.icon-login {
+  margin-right: 10px;
+}
+
+.user-panel-button:hover {
+  color: var(--basic-red)
+}
+
+.user-panel-button:active {
+  color: var(--silver-gray);
+}
+
+.user-panel-button:hover .icon-login,
+.user-panel-button:hover .icon-user,
+.user-panel-button:hover .icon-logout
+  {
+  fill: var(--moderate-blue);
+}
+
+.user-panel-button:active .icon-login,
+.user-panel-button:active .icon-user,
+.user-panel-button:active .icon-logout
+ {
+  fill: var(--silver-gray);
+}
+
+
+
+/* Пользовательское меню */
 
 .user-menu {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 8px 12px 0;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: nowrap;
 }
+
+.user-menu li:not(:last-child) {
+  padding-right: 30px;
+  position: relative;
+}
+
+.user-menu li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--violet-blue);
+}
+
 
 .user-menu-link {
   font-size: 16px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--violet-blue);
+  display: block;
 }
 
 .user-menu-link:hover {
@@ -454,9 +516,10 @@ img {
   color: var(--silver-gray);
 }
 
+/* Меню внизу хедера */
+
 .header-nav {
   list-style: none;
-  padding: 0;
   margin: 0;
   background-color: var(--violet-blue);
   display: flex;
@@ -464,23 +527,32 @@ img {
   align-items: stretch;
   padding-left: 26px;
   padding-right: 26px;
+  box-shadow: 0 4px 0 0 var(--night-blue);
 }
 
 .header-nav-item {
-  padding:16px;
   flex-grow: 1;
   text-align: center;
 }
 
-.header-nav-item:hover {
-  background-color: var(--night-blue);
-}
 .header-nav-link {
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
+  display: block;
+  padding: 16px;
 }
+
+.header-nav-link:hover {
+  background-color: var(--night-blue);
+}
+
+.header-nav-link:active {
+  color: var(--transparent-white);
+  background-color: var(--cobalt-blue);
+}
+
 
 .invisible-header {
   display: none;
