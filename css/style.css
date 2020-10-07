@@ -282,66 +282,97 @@ img {
   fill: var(--basic-red);
 }
 
-/* Ссылки на закладки и корзину */
+/* Кнопка перехода в закладки */
 
-.button-count {
-  position: relative;
-
-  display: block;
-  padding-top: 10px;
-  padding-right: 28px;
-  padding-bottom: 8px;
-  padding-left: 42px;
+.button-favorites {
+  width: 182px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-empty {
+.button-favorites-empty {
   background-color: transparent;
 }
 
-.button-full {
+.button-favorites-full {
   background-color: var(--basic-red);
 }
 
-.button-empty:active {
+.button-favorites-empty:active {
   color: var(--transparent-white);
-
   background-color: var(--cobalt-blue);
 }
 
-.button-full:active {
+.button-favorites-full:active {
   color: var(--transparent-white);
-
   background-color: var(--active-red);
 }
 
-.icon-favorites,
-.icon-cart {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 18px;
-
-  margin-top: auto;
-  margin-bottom: auto;
-
+.icon-favorites {
   fill: var(--slate-gray);
+  margin-right: 8px;
 }
 
-.button-count:hover .icon-favorites,
-.button-count:hover .icon-cart {
+.button-favorites:hover .icon-favorites {
   fill: var(--basic-white);
 }
 
-.button-count:active .icon-favorites,
-.button-count:active .icon-cart {
+.button-favorites:active .icon-favorites {
+  fill: var(--slate-gray);
+}
+
+/* Кнопка переходы в корзину */
+
+.button-cart {
+  width: 136px;
+  height: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-cart-empty {
+  background-color: transparent;
+}
+
+.button-cart-full {
+  background-color: var(--basic-red);
+}
+
+.button-cart-empty:active {
+  color: var(--transparent-white);
+  background-color: var(--cobalt-blue);
+}
+
+.button-cart-full:active {
+  color: var(--transparent-white);
+  background-color: var(--active-red);
+}
+
+.icon-cart {
+  fill: var(--slate-gray);
+  margin-left: 12px;
+  margin-right: 8px;
+}
+
+.button-cart:hover .icon-cart {
+  fill: var(--basic-white);
+}
+
+.button-cart:active .icon-cart {
   fill: var(--slate-gray);
 }
 
 /* Кнопка оформления заказа */
 
 .button-order {
-  padding: 10px 18px 8px;
-
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--basic-green);
 }
 
@@ -351,7 +382,6 @@ img {
 
 .button-order:active {
   color: var(--transparent-white);
-
   background-color: var(--basic-green);
 }
 
@@ -405,7 +435,7 @@ img {
   padding: 0;
 }
 
-/* Кнопки регистрации, входа и выхода */
+/* Пользовательская панель */
 
 .user-panel {
   display: flex;
@@ -413,60 +443,114 @@ img {
   flex-wrap: wrap;
 }
 
-.user-panel-button {
+/* Кнопки входа */
+
+.button-login {
   font-size: 21px;
   line-height: 21px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-black);
-
+  width: 121px;
+  height: 45px;
+  border: none;
   background-color: var(--basic-white);
-  padding: 12px 24px;
   display: flex;
-  justify-items: center;
-  margin-left: 10px;
-
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.logout-button {
+.button-login:hover {
+  color: var(--basic-red)
+}
+
+.button-login:active {
+  color: var(--silver-gray);
+}
+
+.icon-login {
+  fill: var(--silver-gray);
+  margin-right: 8px;
+  margin-left: 18px;
+}
+
+.button-login:hover .icon-login
+  {
+  fill: var(--moderate-blue);
+}
+
+.button-login:active .icon-login
+ {
+  fill: var(--silver-gray);
+}
+
+/* Кнопка регистрации */
+
+.button-reg {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-black);
+  width: 150px;
+  height: 45px;
+  border: none;
+  background-color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.button-reg:hover {
+  color: var(--basic-red)
+}
+
+.button-reg:active {
+  color: var(--silver-gray);
+}
+
+/* Кнопка выхода */
+
+.button-logout {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-black);
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: var(--basic-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 16px;
   padding-right: 16px;
-  justify-content: space-between;
-  width: 100%;
 }
 
-.icon-login,
+
+.button-logout:hover {
+  color: var(--basic-red)
+}
+
+.button-logout:active {
+  color: var(--silver-gray);
+}
+
 .icon-user,
 .icon-logout {
   fill: var(--silver-gray);
 }
 
-.icon-login {
-  margin-right: 10px;
-}
-
-.user-panel-button:hover {
-  color: var(--basic-red)
-}
-
-.user-panel-button:active {
-  color: var(--silver-gray);
-}
-
-.user-panel-button:hover .icon-login,
-.user-panel-button:hover .icon-user,
-.user-panel-button:hover .icon-logout
+.button-logout:hover .icon-user,
+.button-logout:hover .icon-logout
   {
   fill: var(--moderate-blue);
 }
 
-.user-panel-button:active .icon-login,
-.user-panel-button:active .icon-user,
-.user-panel-button:active .icon-logout
+.button-logout:active .icon-user,
+.button-logout:active .icon-logout
  {
   fill: var(--silver-gray);
 }
-
-
 
 /* Пользовательское меню */
 
@@ -498,7 +582,6 @@ img {
   border-radius: 50%;
   background-color: var(--violet-blue);
 }
-
 
 .user-menu-link {
   font-size: 16px;
