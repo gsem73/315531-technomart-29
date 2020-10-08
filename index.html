@@ -93,47 +93,71 @@
           <h2 class="invisible-header">Промо</h2>
           <div class="promo-grid">
             <article class="promo-item promo-material">
-              <h3 class="promo-title">Материалы</h3>
-              <a class="promo-button" href="">На любой вкус</a>
+              <div class="promo-content">
+                <h3 class="promo-title">Материалы</h3>
+                <a class="promo-button" href="">На любой вкус</a>
+              </div>
+              <div class="promo-img promo-img-material"></div>
+              <img class="new-label" src="img/new.svg" width="70" height="70" alt="Новинка">
             </article>
             <article class="promo-item promo-instrument">
-              <h3 class="promo-title">Инструмент</h3>
-              <a class="promo-button" href="">На все случаи</a>
+              <div class="promo-content">
+                <h3 class="promo-title">Инструмент</h3>
+                <a class="promo-button" href="">На все случаи</a>
+              </div>
+              <div class="promo-img promo-img-instrument"></div>
             </article>
             <article class="promo-item promo-technic">
-              <h3 class="promo-title">Техника</h3>
-              <a class="promo-button" href="">Для стройки</a>
+              <div class="promo-content">
+                <h3 class="promo-title">Техника</h3>
+                <a class="promo-button" href="">Для стройки</a>
+              </div>
+              <div class="promo-img promo-img-technic"></div>
             </article>
             <article class="promo-item promo-discount">
-              <h3 class="promo-title">Скидки 50%</h3>
-              <a class="promo-button" href="">На 350 товаров</a>
+              <div class="promo-content">
+                <h3 class="promo-title">Скидки 50%</h3>
+                <a class="promo-button" href="">На 350 товаров</a>
+              </div>
+              <div class="promo-img promo-img-discount"></div>
             </article>
             <article class="promo-item promo-delivery">
-              <h3 class="promo-title">Доставка</h3>
-              <a class="promo-button" href="">Бесплатно</a>
+              <div class="promo-content">
+                <h3 class="promo-title">Доставка</h3>
+                <a class="promo-button" href="">Бесплатно</a>
+              </div>
+              <div class="promo-img promo-img-delivery"></div>
             </article>
             <article class="promo-catalog">
               <ul class="promo-slider">
-                <li class="slide perfo-slide active-slide">
-                  <h3 class="promo-slide-caption">Перфораторы</h3>
-                  <p class="promo-slide-text">Настоящие мужские игрушки</p>
+                <li class="promo-slide promo-perfo-slide promo-active-slide">
+                  <div class="promo-slide-content">
+                    <h3 class="promo-slide-caption">Перфораторы</h3>
+                    <p class="promo-slide-text">Настоящие мужские игрушки</p>
+                  </div>
                 </li>
-                <li class="slide drill-slide">
-                  <h3 class="promo-slide-caption">Дрели</h3>
-                  <p class="promo-slide-text">Соседям на радость!</p>
+                <li class="promo-slide promo-drill-slide">
+                  <div class="promo-slide-content">
+                    <h3 class="promo-slide-caption">Дрели</h3>
+                    <p class="promo-slide-text">Соседям на радость!</p>
+                </div>
                 </li>
               </ul>
-              <a class="base-button catalog-button" href="catalog.html">Открыть каталог</a>
-              <button class="slider-button prev-button" type="button" aria-label="Предыдущий слайд">
-                <svg width="23" height="41" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
-                </svg>
+              <a class="base-button promo-slider-catalog-button" href="catalog.html">Открыть каталог</a>
+              <button class="promo-slider-button promo-slider-prev-button" type="button" aria-label="Предыдущий слайд">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9244 0.941467L21.9226 2.98927L4.90699 20.4361L21.978 37.9376L19.9789 39.9854L0.910645 20.4361L19.9244 0.941467Z" fill="white"/>
+               </svg>
               </button>
-              <button class="slider-button next-button" type="button" aria-label="Следующий слайд">
-                <svg width="23" height="41" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
-                </svg>
+              <button class="promo-slider-button promo-slider-next-button" type="button" aria-label="Следующий слайд">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.07568 39.0585L0.0775032 37.0107L17.0931 19.5639L0.0220242 2.06243L2.02115 0.0146294L21.0894 19.5639L2.07568 39.0585Z" fill="white"/>
+               </svg>
               </button>
+              <div class="promo-slider-control">
+                <div class="promo-slider-point"></div>
+                <div class="promo-slider-point promo-slider-active-point"></div>
+              </div>
             </article>
           </div>
         </div>
@@ -143,40 +167,34 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Популярные товары:</h2>
-            <a class="base-button section-button" href="">Все популярные товары</a>
+            <a class="base-button" href="">Все популярные товары</a>
           </div>
           <ul class="grid-4">
             <li class="card-item">
-              <a class="card-link"  href="">
-                <img class="card-img" src="img/perforator-bosch-bfg-9000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 9000»">
-                <h3 class="card-title">Перфоратор BOSCH<br>BFG 9000</h3>
-              </a>
-              <span class="card-price">32500 p.</span>
+              <img class="card-img" src="img/perforator-bosch-bfg-9000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 9000»">
+              <h3 class="card-title">Перфоратор BOSCH<br>BFG 9000</h3>
+              <span class="old-price">32500 p.</span>
               <button class="card-button" type="button">25500 p.</button>
             </li>
             <li class="card-item">
-              <a class="card-link"  href="">
-                <img class="card-img" src="img/perforator-bosch-bfg-3000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 3000»">
-                <h3 class="card-title">Перфоратор BOSCH<br>BFG 3000</h3>
-              </a>
-              <span class="card-price">22500 p.</span>
+              <img class="card-img" src="img/perforator-bosch-bfg-3000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 3000»">
+              <h3 class="card-title">Перфоратор BOSCH<br>BFG 3000</h3>
+              <span class="old-price">22500 p.</span>
               <button class="card-button" type="button">15500 p.</button>
+              <img class="new-label" src="img/new.svg" width="70" height="70" alt="Новинка">
             </li>
             <li class="card-item">
-              <a class="card-link"  href="">
-                <img class="card-img" src="img/perforator-bosch-bfg-6000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 6000»">
-                <h3 class="card-title">Перфоратор BOSCH<br>BFG 6000</h3>
-              </a>
-              <span class="card-price">30500 p.</span>
+              <img class="card-img" src="img/perforator-bosch-bfg-6000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 6000»">
+              <h3 class="card-title">Перфоратор BOSCH<br>BFG 6000</h3>
+              <span class="old-price">30500 p.</span>
               <button class="card-button" type="button">25500 p.</button>
             </li>
             <li class="card-item">
-              <a class="card-link" href="">
-                <img class="card-img" src="img/perforator-bosch-bfg-2000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 2000»">
-                <h3 class="card-title">Перфоратор BOSCH<br>BFG 2000</h3>
-              </a>
-              <span class="card-price"></span>
+              <img class="card-img" src="img/perforator-bosch-bfg-2000.jpg" width="180" height="160" alt="Изображение товара «Перфоратор BOSCH BFG 2000»">
+              <h3 class="card-title">Перфоратор BOSCH<br>BFG 2000</h3>
+              <span class="old-price"></span>
               <button class="card-button" type="button">12500 Р.</button>
+              <img class="new-label" src="img/new.svg" width="70" height="70" alt="Новинка">
             </li>
           </ul>
         </div>
@@ -186,7 +204,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Популярные Производители:</h2>
-            <p><a class="base-button section-button" href="">Все производители</a></p>
+            <a class="base-button" href="">Все производители</a>
           </div>
           <ul class="grid-4">
             <li class="partner-item"><a class="partner-link" href =""><img class="partner-logo" src= "img/logo-bosch.png" width="120" height="60" alt="Логотип компании Bosch"></a></li>
