@@ -958,7 +958,7 @@ img {
 .card-item {
   min-height: 318px;
   box-sizing: border-box;
-  padding: 10px 10px 20px;
+  padding: 6px 2px 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -1067,8 +1067,9 @@ img {
 }
 
 .card-img {
-  height: 150px;
+  height: 158px;
   object-fit: contain;
+  margin-right: 8px; /* В левой половине картинки обычно сверло и много пустого места, поэтому сдвигаем немного картинку центрировать сам девайс без сверла */
 }
 
 .card-title {
@@ -1079,7 +1080,7 @@ img {
   color: var(--basic-black);
   text-align: center;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 15px;
   margin-bottom: auto;
 }
 
@@ -1094,7 +1095,7 @@ img {
   max-width: 160px;
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 
@@ -1676,7 +1677,7 @@ img {
 
 .sort-title {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1703,7 +1704,7 @@ img {
 
 .sort-menu-link {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1853,7 +1854,7 @@ goods-panel{
   margin: 0;
   padding: 0;
   border: none;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .filter-item:not(:last-of-type) {
