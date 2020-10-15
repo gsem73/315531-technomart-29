@@ -2189,3 +2189,11 @@ goods-panel{
   line-height: 24px;
   color: var(--dark-gray);
 }
+
+.about {
+  background-color: var(--aluminum-dark);
+  padding-top: 40px;
+  padding-bottom: 10px;
+  min-height: 259px;
+  box-sizing: border-box;
+}
