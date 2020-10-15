@@ -137,6 +137,7 @@ body {
   color: var(--basic-black, #000000);
 
   background-color: var(--basic-white,  #ffffff);
+  position: relative;
 }
 
 a {
@@ -1196,7 +1197,7 @@ img {
 
 .service {
   background-color: var(--aluminum-dark);
-  min-height: 259px;
+  min-height: 522px;
   padding-top: 40px;
   box-sizing: border-box;
 }
@@ -1213,7 +1214,7 @@ img {
 
 .service-text {
   font-size: 13px;
-  line-height: 24px;
+  line-height: 25px;
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-black);
 }
@@ -1222,6 +1223,21 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 1px;
+  position: relative;
+}
+
+.slider-tab::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  bottom: 50px;
+  width: 10px;
+  height: 280px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -1234,17 +1250,18 @@ img {
   padding: 0;
   margin: 0 0 30px;
   max-width: 300px;
+  font-weight: normal;
 }
 
 .slide-text {
   padding: 0;
   margin: 0 0 20px;
-  max-width: 300px;
+  max-width: 360px;
 }
 
 .slider-grid {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 240px 1fr;
   margin-top: 70px;
 
 }
@@ -1265,7 +1282,7 @@ img {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right 20px;
 }
 
 .service-slide-delivery {
@@ -1284,16 +1301,6 @@ img {
   display: block;
 }
 
-.service-active-tab {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--violet-blue);
-  padding: 14px 18px 18px;
-
-  background-color: var(--basic-white);
-}
 
 .service-tab {
   font-weight: bold;
@@ -1301,7 +1308,7 @@ img {
   line-height: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
-  padding: 14px 18px 18px;
+  padding: 14px 22px 18px;
 
   background-color: var(--violet-blue);
 }
@@ -1309,6 +1316,22 @@ img {
 .service-tab:hover {
   background-color: var(--night-blue);
 }
+
+.service-active-tab {
+  color: var(--violet-blue);
+  background-color: var(--basic-white);
+}
+
+.service-not-active {
+  box-shadow: inset 0 1px 0 0 #405069, inset 0 -1px 0 0 #293449;
+}
+
+
+.service-active-tab:hover {
+  color: var(--violet-blue);
+  background-color: var(--basic-white);
+}
+
 
 .service-button {
   font-size: 14px;
@@ -1325,11 +1348,14 @@ img {
 .contacts {
   padding-top: 48px;
   padding-bottom: 48px;
+  min-height: 496px;
+  box-sizing: border-box;
 }
 
 .contact-grid {
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 300px;
+  grid-gap: 20px;
 }
 .contact-title {
   font-size: 30px;
@@ -1337,12 +1363,14 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .transport-company-list {
   list-style: none;
-  list-style-image: url("../img/red-line.png");
-  margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .transport-company {
@@ -1350,7 +1378,26 @@ img {
   line-height: 24px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  padding-left: 38px;
+  position: relative;
 }
+
+.transport-company::before {
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin-top:auto;
+  margin-bottom: auto;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
 
 .contact-comment {
   font-size: 13px;
@@ -1359,8 +1406,13 @@ img {
   margin-bottom: 28px;
 }
 
+.contact-comment:last-of-type {
+  margin-bottom: 2px;
+}
+
 .map-link {
   display: block;
+  margin-top: 32px;
   margin-bottom: 20px;
 }
 
@@ -1433,6 +1485,12 @@ img {
   margin-right: 59px;
 }
 
+.contact-button {
+  display: block;
+  max-width: 220px;
+  margin: 20px 0 20px;
+  box-sizing: border-box;
+}
 
 
 .footer-grid {
@@ -1441,12 +1499,6 @@ img {
   padding-top: 20px;
   padding-bottom: 10px;
   grid-gap: 20px;
-}
-
-.contact-button {
-  display: block;
-  max-width: 200px;
-  margin: 20px 0 20px;
 }
 
 .footer-content {
@@ -1803,50 +1855,6 @@ goods-panel{
   margin-top: 7px;
 }
 
-.modal-form {
-  display: block;
-  border-top: 7px solid var(--basic-red);
-  border-bottom: none;
-  position: relative;
-  box-shadow: var(--transparent-black) 0 4px 20px 0;
-}
-
-.geo-form {
-  max-width: 960px;
-}
-
-.feedback-form {
-  max-width: 620px;
-}
-
-.modal-map-close {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  right: 10px;
-  top: 10px;
-}
-
-.input-container {
-  padding: 36px 70px;
-}
-.button-container {
-  padding: 36px 70px;
-  background-color: #f4f4f4;
-}
-
-
-.form-control {
-  display: block;
-  width: 100%;
-  margin-bottom: 12px;
-}
-
-.form-group {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
 
 /* Форма фильтров */
 
@@ -2068,4 +2076,116 @@ goods-panel{
 .filter-item .legend-power{
   padding-top: 16px;
   padding-bottom: 1px;
+}
+
+
+/* Модальные окна */
+
+.modal-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-top: 7px solid var(--basic-red);
+  box-shadow: var(--transparent-black) 0 4px 20px 0;
+  display: none;
+  box-sizing: border-box;
+}
+
+/* Форма геолокации*/
+
+.geo-form {
+  width: 943px;
+  height: 449px;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 6px;
+  top: 14px;
+}
+
+/* Форма обратной связи */
+
+.feedback {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback-form {
+  width: 620px;
+  height: 430px;
+  background-color: var(--basic-white);
+}
+
+.input-container {
+  padding: 40px 80px;
+}
+.button-container {
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+}
+
+.form-label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+  margin-bottom: 10px;
+}
+
+.form-input {
+  height: 38px;
+  border: 2px solid var(--silver-gray);
+  padding: 7px 12px;
+}
+
+.form-input::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--dark-gray);
+}
+
+.group-item {
+  margin-bottom: 14px;
+}
+
+.form-textarea {
+  padding: 7px 12px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--dark-gray);
 }

@@ -192,7 +192,7 @@
                 <svg class="card-button-img" width="141" height="38" viewBox="0 0 141 38" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" />
                 </svg>
-                <div class="new-price">25500 p.</div>
+                <span class="new-price">25500 p.</span>
               </button>
             </li>
 
@@ -217,7 +217,7 @@
                 <svg class="card-button-img" width="141" height="38" viewBox="0 0 141 38" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" />
                 </svg>
-                <div class="new-price">15500 p.</div>
+                <span class="new-price">15500 p.</span>
               </button>
               <img class="new-label" src="img/new.svg" width="70" height="70" alt="Новинка">
             </li>
@@ -243,7 +243,7 @@
                 <svg class="card-button-img" width="141" height="38" viewBox="0 0 141 38" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" />
                 </svg>
-                <div class="new-price">25500 p.</div>
+                <span class="new-price">25500 p.</span>
               </button>
             </li>
 
@@ -302,14 +302,14 @@
           <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="slider-grid">
             <ul class="slider-tab">
-              <li class="service-active-tab">Доставка</li>
-              <li class="service-tab">Гарантия</li>
-              <li class="service-tab">Кредит</li>
+              <li class="service-tab service-active-tab">Доставка</li>
+              <li class="service-tab service-not-active">Гарантия</li>
+              <li class="service-tab service-not-active">Кредит</li>
             </ul>
             <ul class="service-slider">
               <li class="service-slide service-slide-delivery service-active-slide">
                 <h3 class="slide-title">Доставка</h3>
-                <p class="slide-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <p class="slide-text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
               </li>
               <li class="service-slide service-slide-guarantee">
                 <h3 class="slide-title">Гарантия</h3>
@@ -330,7 +330,8 @@
           <div class="contact-grid">
             <section>
               <h2 class="contact-title">Компания «Техномарт»</h2>
-              <p class="contact-comment">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. <br> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+              <p class="contact-comment">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах. </p>
+              <p class="contact-comment">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
               <ul class="transport-company-list">
                 <li class="transport-company">Деловые линии</li>
                 <li class="transport-company">Автотрейдинг</li>
@@ -340,9 +341,9 @@
             </section>
             <section>
               <h2 class="contact-title">Контакты</h2>
-              <p class="contact-comment">Вы можете забрать товар сами, заехав в наш офис:</p>
+              <p class="contact-comment">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
               <a class= "map-link" href=""><img src="img/map.png" width="300" height="158"  alt="Расположение компании на карте"></a>
-              <a class="base-button contact-button" href="">Заблудились? Напишите нам!</a>
+              <a class="base-button form-control" href="">Заблудились? Напишите нам!</a>
             </section>
           </div>
         </div>
@@ -354,26 +355,26 @@
 
       <div class="footer-content">
         <div class="container">
-          <div class="grid-2">
-            <div><a class="logo" href="index.html"><img class="logo-img" src="img/logo-technomart.svg" width="106" height="16" alt="Логотип интернет-магазина Техномарт"></a></div>
+          <div class="footer-flex">
+            <a class="logo logo-footer" href="index.html"><img class="logo-img" src="img/logo-technomart-footer.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт"></a>
             <ul class="footer-menu">
-              <li><a class="footer-menu-link" href="">Компания</a></li>
-              <li><a class="footer-menu-link" href="">Новости</a></li>
-              <li><a class="footer-menu-link" href="catalog.html">Каталог</a></li>
-              <li><a class="footer-menu-link" href="">Доставка</a></li>
-              <li><a class="footer-menu-link" href="">Контакты</a></li>
+              <li class="footer-menu-item"><a class="footer-menu-link" href="">Компания</a></li>
+              <li class="footer-menu-item"><a class="footer-menu-link" href="">Новости</a></li>
+              <li class="footer-menu-item"><a class="footer-menu-link" href="catalog.html">Каталог</a></li>
+              <li class="footer-menu-item"><a class="footer-menu-link" href="">Доставка</a></li>
+              <li class="footer-menu-item"><a class="footer-menu-link" href="">Контакты</a></li>
             </ul>
           </div>
-          <div class="grid-2">
+          <div class="footer-flex">
             <div>
               <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <a class="footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
             <ul class="add-menu">
-              <li><a class="add-menu-link" href="">Материалы</a></li>
-              <li><a class="add-menu-link" href="">Техника</a></li>
-              <li><a class="add-menu-link" href="">Инструмент</a></li>
-              <li><a class="add-menu-link" href="">Спецпредложения</a></li>
+              <li class="add-menu-item"><a class="add-menu-link" href="">Материалы</a></li>
+              <li class="add-menu-item"><a class="add-menu-link" href="">Техника</a></li>
+              <li class="add-menu-item"><a class="add-menu-link" href="">Инструмент</a></li>
+              <li class="add-menu-item"><a class="add-menu-link" href="">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
@@ -406,9 +407,11 @@
                 </a>
               </li>
             </ul>
-            <div class="footer-feedback">
-              <p class="footer-copyright">Обратная связь:<br><a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-              <p class="footer-copyright">Разработано —<br><a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+            <div>
+              <div class="footer-feedback">
+                <p class="footer-copyright">Обратная связь:<br><a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+                <p class="footer-copyright">Разработано —<br><a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -417,8 +420,8 @@
     </footer>
 
     <div class="modal-form geo-form">
-      <img class="modal-map-img" src="img/modal-map.png" alt="Наш адрем на карте">
-      <button class="modal-map-close" type="button">
+      <img src="img/modal-map.png" alt="Наш адрем на карте">
+      <button class="modal-close-button" type="button">
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
         </svg>
@@ -426,29 +429,29 @@
     </div>
 
     <div class="modal-form feedback-form">
-      <form>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <div class="input-container">
           <div class="form-group">
             <div class="group-item">
-              <label class="form-control" for="name">Ваше имя:</label>
-              <input class="form-control" type="text" id="name" placeholder="Имя Фамилия">
+              <label class="form-control form-label" for="name">Ваше имя:</label>
+              <input class="form-control form-input" type="text" id="name" placeholder="Имя Фамилия">
             </div>
             <div class="group-item">
-              <label class="form-control" for="email">Ваш e-mail:</label>
-              <input class="form-control" type="text" id="email" placeholder="email@example.com">
+              <label class="form-control form-label" for="email">Ваш e-mail:</label>
+              <input class="form-control form-input" type="text" id="email" placeholder="email@example.com">
             </div>
           </div>
-          <label class="form-control" for="message">Текст письма:</label>
-          <textarea class="form-control" id="message">В свободной форме</textarea>
+          <label class="form-control form-label" for="message">Текст письма:</label>
+          <textarea class="form-control form-textarea" id="message" rows="4">В свободной форме</textarea>
         </div>
 
         <div class="button-container">
-          <input class="form-control base-button" type="submit" value="Отправить">
+          <input class="submit-button base-button" type="submit" value="Отправить">
         </div>
 
 
       </form>
-      <button class="modal-map-close" type="button">
+      <button class="modal-close-button" type="button">
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
         </svg>
