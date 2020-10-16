@@ -699,6 +699,7 @@ img {
   padding-bottom: 21px;
   background-repeat: no-repeat;
   background-position: calc(100% - 42px) center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -709,26 +710,36 @@ img {
 
 .promo-material {
   background-color: var(--promo-dark-orange);
+  background-image: url("../img/icon-material.svg");
+  background-position: top 31px right 43px;
   order: 1;
 }
 
 .promo-instrument {
   background-color: var(--promo-frosty-sky);
+  background-image: url("../img/icon-instrument.svg");
+  background-position: top 34px right 31px;
   order: 2;
 }
 
 .promo-technic {
   background-color: var(--promo-light-plum);
+  background-image: url("../img/icon-technic.svg");
+  background-position: top 31px right 31px;
   order: 3;
 }
 
 .promo-discount {
   background-color: var(--promo-green-apple);
+  background-image: url("../img/icon-discount.svg");
+  background-position: top 26px right 45px;
   order: 5;
 }
 
 .promo-delivery {
   background-color: var(--promo-light-orange);
+  background-image: url("../img/icon-delivery.svg");
+  background-position: top 32px right 31px;
   order: 6;
 }
 
@@ -769,36 +780,6 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.promo-img {
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom: 0;
-  width: 140px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.promo-img-material {
-  background-image: url("../img/icon-material.svg");
-}
-
-.promo-img-instrument {
-  background-image: url("../img/icon-instrument.svg");
-}
-
-.promo-img-technic {
-  background-image: url("../img/icon-technic.svg");
-}
-
-.promo-img-discount {
-  background-image: url("../img/icon-discount.svg");
-}
-
-.promo-img-delivery {
-  background-image: url("../img/icon-delivery.svg");
 }
 
 /* Промо-слайдер */
@@ -959,7 +940,7 @@ img {
 .card-item {
   min-height: 318px;
   box-sizing: border-box;
-  padding: 6px 2px 20px;
+  padding: 5px 2px 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -1068,9 +1049,12 @@ img {
 }
 
 .card-img {
-  height: 158px;
+  width: 184px;
+  height: 164px;
   object-fit: contain;
-  margin-right: 8px; /* В левой половине картинки обычно сверло и много пустого места, поэтому сдвигаем немного картинку центрировать сам девайс без сверла */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .card-title {
@@ -1081,7 +1065,7 @@ img {
   color: var(--basic-black);
   text-align: center;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 8px;
   margin-bottom: auto;
 }
 
@@ -2196,4 +2180,11 @@ goods-panel{
   padding-bottom: 10px;
   min-height: 259px;
   box-sizing: border-box;
+}
+
+
+/* Для подгонки в макет, можно смело удалять*/
+
+.partners .section-header {
+  padding-right: 19px;
 }
