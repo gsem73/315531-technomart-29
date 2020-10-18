@@ -15,12 +15,12 @@
           <div class="container">
             <div class="header-panel">
               <a class="logo"><img class="logo-img" src="img/logo-technomart.svg" width="106" height="16" alt="Логотип интернет-магазина Техномарт"></a>
-              <div class="header-search">
-                <input class="header-input control-text" type="text" placeholder="Поиск:">
+              <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
+                <input class="header-input control-text" name="search" type="text" placeholder="Поиск:">
                 <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
                 </svg>
-              </div>
+              </form>
               <a class="button-favorites button-favorites-empty control-text" href="">
                 <svg class="icon-favorites" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"/>
@@ -149,10 +149,12 @@
                   <path d="M2.07568 39.0585L0.0775032 37.0107L17.0931 19.5639L0.0220242 2.06243L2.02115 0.0146294L21.0894 19.5639L2.07568 39.0585Z" fill="white"/>
                </svg>
               </button>
-              <div class="promo-slider-control">
-                <div class="promo-slider-point"></div>
-                <div class="promo-slider-point promo-slider-active-point"></div>
-              </div>
+              <form class="promo-slider-control">
+                <input class="promo-slider-radio" type="radio" name="radio-button" id="radio-perfo-slide">
+                <label class="promo-slider-point" for="radio-perfo-slide"></label>
+                <input class="promo-slider-radio" type="radio" name="radio-button" id="radio-drill-slide" checked>
+                <label class="promo-slider-point" for="radio-drill-slide"></label>
+              </form>
             </article>
           </div>
         </div>
@@ -205,7 +207,7 @@
                   В закладки
                 </button>
               </div>
-              <img class="card-img" src="img/perforator-bosch-bfg-3000.jpg" width="127" height="112" alt="Изображение товара «Перфоратор BOSCH BFG 3000»">
+              <img class="card-img" src="img/perforator-bosch-bfg-3000.jpg" width="184" height="164" alt="Изображение товара «Перфоратор BOSCH BFG 3000»">
               <h3 class="card-title">Перфоратор BOSCH<br>BFG 3000</h3>
               <span class="old-price">22500 p.</span>
               <button class="card-button" type="button">
@@ -231,7 +233,7 @@
                   В закладки
                 </button>
               </div>
-              <img class="card-img" src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Изображение товара «Перфоратор BOSCH BFG 6000»">
+              <img class="card-img" src="img/perforator-bosch-bfg-6000.jpg" width="184" height="164" alt="Изображение товара «Перфоратор BOSCH BFG 6000»">
               <h3 class="card-title">Перфоратор BOSCH<br>BFG 6000</h3>
               <span class="old-price">30500 p.</span>
               <button class="card-button" type="button">
@@ -256,7 +258,7 @@
                   В закладки
                 </button>
               </div>
-              <img class="card-img" src="img/perforator-bosch-bfg-2000.jpg" width="127" height="112" alt="Изображение товара «Перфоратор BOSCH BFG 2000»">
+              <img class="card-img" src="img/perforator-bosch-bfg-2000.jpg" width="184" height="164" alt="Изображение товара «Перфоратор BOSCH BFG 2000»">
               <h3 class="card-title">Перфоратор BOSCH<br>BFG 2000</h3>
               <span class="old-price"></span>
               <button class="card-button" type="button">

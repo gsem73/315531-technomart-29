@@ -881,6 +881,10 @@ img {
   justify-content: center;
 }
 
+.promo-slider-radio{
+  display: none;
+}
+
 .promo-slider-point {
   width: 6px;
   height: 6px;
@@ -893,7 +897,7 @@ img {
   margin-right: 10px;
 }
 
-.promo-slider-active-point {
+.promo-slider-radio:checked+.promo-slider-point {
   background-color: var(--basic-red);
 }
 
@@ -955,7 +959,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  height: 150px;
+  height: 164px;
   background-color: var(--basic-white);
   display: none;
 }
@@ -1065,7 +1069,7 @@ img {
   color: var(--basic-black);
   text-align: center;
   padding: 0;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: auto;
 }
 
@@ -1175,6 +1179,9 @@ img {
 
 .partner-logo {
   display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* Service */
@@ -1207,7 +1214,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 1px;
+  margin-top: 2px;
   position: relative;
 }
 
@@ -1364,7 +1371,7 @@ img {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   padding-left: 38px;
   position: relative;
 }
@@ -1391,7 +1398,7 @@ img {
 }
 
 .contact-comment:last-of-type {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .map-link {
@@ -1472,7 +1479,7 @@ img {
 .contact-button {
   display: block;
   max-width: 220px;
-  margin: 20px 0 20px;
+  margin: 22px 0 20px;
   box-sizing: border-box;
 }
 
@@ -1480,7 +1487,7 @@ img {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 10px;
   grid-gap: 20px;
 }
@@ -1533,6 +1540,7 @@ img {
 
 .social-item {
   margin: 0;
+  margin-top: 3px;
   padding: 0;
   text-align: center;
   line-height: 24px;
@@ -1540,7 +1548,7 @@ img {
 }
 
 .social-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .social-link {
@@ -2018,7 +2026,6 @@ goods-panel{
   position: relative;
   display: block;
   padding-left: 35px;
-  vertical-align: middle;
 }
 
 
@@ -2187,4 +2194,38 @@ goods-panel{
 
 .partners .section-header {
   padding-right: 19px;
+}
+
+.partner-logo[src="img/logo-makita.png"] {
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+
+.partner-logo[src="img/logo-dewalt.png"] {
+  margin-bottom: 5px;
+}
+
+.partner-logo[src="img/logo-interskol.png"] {
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.partner-logo[src="img/logo-hitachi.png"] {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.partner-logo[src="img/logo-lg.png"] {
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.partner-logo[src="img/logo-aeg.png"] {
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+
+.partner-logo[src="img/logo-metabo.png"] {
+  margin-bottom: 4px;
+  margin-left: 2px;
 }
