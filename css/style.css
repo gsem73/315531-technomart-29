@@ -2098,7 +2098,7 @@ goods-panel{
   background-color: transparent;
   border: none;
   right: 6px;
-  top: 14px;
+  top: 10px;
 }
 
 /* Форма обратной связи */
@@ -2189,6 +2189,96 @@ goods-panel{
   box-sizing: border-box;
 }
 
+/* Форма подтверждения добавления товара в корзину */
+
+.confirm-form {
+  width: 620px;
+  height: 282px;
+  background-color: var(--basic-white);
+}
+
+.confirm-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 80px;
+  padding-top: 46px;
+}
+
+.confirm-text {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  margin-left: 30px
+}
+
+.confirm-group {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+
+.execute-button {
+  font-family:  "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  box-sizing: border-box;
+  background-color: var(--basic-red);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  padding-right: 8px;
+  min-width: 192px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  justify-self: end;
+}
+
+.execute-button:hover {
+  background-color: var(--hover-red);
+}
+
+.execute-button:active {
+  background-color: var(--active-red);
+}
+
+
+.continue-button {
+  font-family:  "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  box-sizing: border-box;
+  background-color: var(--basic-white);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  padding-right: 8px;
+  min-width: 192px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  justify-self: start;
+}
+
+.continue-button:hover {
+  color: var(--basic-red)
+}
+
+.continue-button:active {
+  color: var(--silver-gray);
+}
 
 /* Для подгонки в макет, можно смело удалять*/
 
