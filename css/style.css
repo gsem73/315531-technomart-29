@@ -298,7 +298,6 @@ img {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
-  outline: none;
 }
 
 .icon-search {
@@ -881,10 +880,6 @@ img {
   justify-content: center;
 }
 
-.promo-slider-radio{
-  display: none;
-}
-
 .promo-slider-point {
   width: 6px;
   height: 6px;
@@ -897,8 +892,13 @@ img {
   margin-right: 10px;
 }
 
-.promo-slider-radio:checked+.promo-slider-point {
+.promo-slider-radio:checked + .promo-slider-point {
   background-color: var(--basic-red);
+}
+
+
+.promo-slider-radio:focus + .promo-slider-point {
+  outline: 1px solid var(--hover-red);
 }
 
 /* Cards */
@@ -964,7 +964,9 @@ img {
   display: none;
 }
 
-.card-item:hover .card-form {
+.card-item:hover .card-form,
+.card-item:focus .card-form,
+.card-item:focus-within .card-form {
   display: block;
 }
 
@@ -1006,11 +1008,6 @@ img {
 
 .card-cart-button:active {
   background-color: var(--active-green);
-  outline: none;
-}
-
-.card-cart-button:focus {
-  outline: none;
 }
 
 .card-favorites-button {
@@ -1046,10 +1043,6 @@ img {
   border-color: var(--violet-blue);
   color: var(--violet-blue);
   opacity: 0.5;
-}
-
-.card-favorites-button:focus {
-  outline: none;
 }
 
 .card-img {
@@ -1092,7 +1085,6 @@ img {
   background-color: transparent;
   border: none;
   position: relative;
-  outline: none;
   padding: 0;
   margin: 0;
   padding-left: 12px;
@@ -1214,8 +1206,8 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 2px;
   position: relative;
+  margin-top: 1px;
 }
 
 .slider-tab::after {
@@ -1292,35 +1284,31 @@ img {
   display: block;
 }
 
-
-.service-tab {
+.service-slider-tab {
+  display: block;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
   padding: 14px 22px 18px;
-
   background-color: var(--violet-blue);
-}
-
-.service-tab:hover {
-  background-color: var(--night-blue);
-}
-
-.service-active-tab {
-  color: var(--violet-blue);
-  background-color: var(--basic-white);
-}
-
-.service-not-active {
   box-shadow: inset 0 1px 0 0 #405069, inset 0 -1px 0 0 #293449;
 }
 
+.service-slider-tab:hover {
+  background-color: var(--night-blue);
+}
 
-.service-active-tab:hover {
+.service-slider-radio:checked + .service-slider-tab {
   color: var(--violet-blue);
   background-color: var(--basic-white);
+  box-shadow: none;
+}
+
+
+.service-slider-radio:focus + .service-slider-tab {
+  outline: 1px solid var(--hover-red);
 }
 
 
