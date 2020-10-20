@@ -964,7 +964,9 @@ img {
   display: none;
 }
 
-.card-item:hover .card-form {
+.card-item:hover .card-form,
+.card-item:focus .card-form,
+.card-item:focus-within .card-form {
   display: block;
 }
 
