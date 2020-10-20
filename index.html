@@ -299,9 +299,18 @@
           <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="slider-grid">
             <ul class="slider-tab">
-              <li class="service-tab service-active-tab">Доставка</li>
-              <li class="service-tab service-not-active">Гарантия</li>
-              <li class="service-tab service-not-active">Кредит</li>
+              <li>
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-delivery-slide" checked>
+                <label class="service-slider-tab" for="radio-delivery-slide">Доставка</label>
+              </li>
+              <li>
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-guarantee-slide">
+                <label class="service-slider-tab" for="radio-guarantee-slide">Гарантия</label>
+              </li>
+              <li>
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-credit-slide">
+                <label class="service-slider-tab" for="radio-credit-slide">Кредит</label>
+              </li>
             </ul>
             <ul class="service-slider">
               <li class="service-slide service-slide-delivery service-active-slide">
