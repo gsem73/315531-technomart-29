@@ -1989,6 +1989,11 @@ goods-panel{
   background-image: url("../img/checkbox-on.svg");
 }
 
+.vendor-input:focus + .vendor-name {
+  outline: 1px solid var(--special-gray);
+  outline-offset: 8px;
+}
+
 /* Радио */
 
 .filter-power {
@@ -2031,6 +2036,11 @@ goods-panel{
 
 .power-input:checked + .power-name::before {
   background-image: url("../img/radio-on.svg");
+}
+
+.power-input:focus + .power-name {
+  outline: 1px solid var(--special-gray);
+  outline-offset: 8px;
 }
 
 .button-show {
