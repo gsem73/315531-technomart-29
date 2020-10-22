@@ -1391,8 +1391,14 @@ img {
 
 .map-link {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 20px;
+  margin-top: 34px;
+  margin-bottom: 25px;
+  border: 0;
+  padding: 0;
+}
+
+.map-img {
+  display: block;
 }
 
 
@@ -1467,7 +1473,7 @@ img {
 .contact-button {
   display: block;
   max-width: 220px;
-  margin: 22px 0 20px;
+  margin: 21px 0 20px;
   box-sizing: border-box;
 }
 
@@ -2083,6 +2089,15 @@ goods-panel{
   box-sizing: border-box;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /* Форма геолокации*/
 
 .geo-form {
@@ -2171,6 +2186,14 @@ goods-panel{
 .form-textarea {
   padding: 7px 12px;
 
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-textarea::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2316,4 +2339,47 @@ goods-panel{
 .partner-logo[src="img/logo-metabo.png"] {
   margin-bottom: 4px;
   margin-left: 2px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
