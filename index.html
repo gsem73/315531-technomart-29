@@ -349,7 +349,7 @@
               <h2 class="contact-title">Контакты</h2>
               <p class="contact-comment">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
               <button class= "map-link" type="button"><img class="map-img" src="img/map.png" width="300" height="158" alt="Расположение компании на карте"></button>
-              <button class="base-button form-control" type="button">Заблудились? Напишите нам!</button>
+              <button class="base-button form-control feedback-button" type="button">Заблудились? Напишите нам!</button>
             </section>
           </div>
         </div>
@@ -440,15 +440,15 @@
           <div class="form-group">
             <div class="group-item">
               <label class="form-control form-label" for="name">Ваше имя:</label>
-              <input class="form-control form-input" type="text" id="name" placeholder="Имя Фамилия">
+              <input class="form-control form-input user-input" type="text" id="name" name="user-name" placeholder="Имя Фамилия">
             </div>
             <div class="group-item">
               <label class="form-control form-label" for="email">Ваш e-mail:</label>
-              <input class="form-control form-input" type="text" id="email" placeholder="email@example.com">
+              <input class="form-control form-input email-input" type="text" id="email" name="user-email" placeholder="email@example.com">
             </div>
           </div>
           <label class="form-control form-label" for="message">Текст письма:</label>
-          <textarea class="form-control form-textarea" id="message" rows="4">В свободной форме</textarea>
+          <textarea class="form-control form-textarea message-input" id="message" name="user-message" rows="4" placeholder="В свободной форме"></textarea>
         </div>
 
         <div class="button-container">
@@ -463,5 +463,8 @@
         </svg>
       </button>
     </div>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
