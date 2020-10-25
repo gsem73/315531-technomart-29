@@ -125,17 +125,17 @@
             </article>
             <article class="promo-catalog">
               <ul class="promo-slider">
-                <li class="promo-slide promo-perfo-slide promo-active-slide">
-                  <div class="promo-slide-content">
-                    <h3 class="promo-slide-caption">Перфораторы</h3>
-                    <p class="promo-slide-text">Настоящие мужские игрушки</p>
-                  </div>
-                </li>
                 <li class="promo-slide promo-drill-slide">
                   <div class="promo-slide-content">
                     <h3 class="promo-slide-caption">Дрели</h3>
                     <p class="promo-slide-text">Соседям на радость!</p>
                 </div>
+                </li>
+                <li class="promo-slide promo-perfo-slide promo-active-slide">
+                  <div class="promo-slide-content">
+                    <h3 class="promo-slide-caption">Перфораторы</h3>
+                    <p class="promo-slide-text">Настоящие мужские игрушки</p>
+                  </div>
                 </li>
               </ul>
               <button class="promo-slider-button promo-slider-prev-button" type="button" aria-label="Предыдущий слайд">
@@ -149,9 +149,9 @@
                </svg>
               </button>
               <form class="promo-slider-control">
-                <input class="promo-slider-radio visually-hidden" type="radio" name="radio-button" id="radio-perfo-slide" aria-label="Слайд перфораторы">
+                <input class="promo-slider-radio visually-hidden" type="radio" name="radio-button" id="radio-perfo-slide" aria-label="Слайд перфораторы" value="0">
                 <label class="promo-slider-point" for="radio-perfo-slide"></label>
-                <input class="promo-slider-radio visually-hidden" type="radio" name="radio-button" id="radio-drill-slide" aria-label="Слайд дрели" checked >
+                <input class="promo-slider-radio visually-hidden" type="radio" name="radio-button" id="radio-drill-slide" aria-label="Слайд дрели" value="1" checked>
                 <label class="promo-slider-point" for="radio-drill-slide"></label>
               </form>
               <a class="base-button promo-slider-catalog-button" href="catalog.html">Открыть каталог</a>
@@ -300,15 +300,15 @@
           <div class="slider-grid">
             <ul class="slider-tab">
               <li>
-                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-delivery-slide" checked>
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" value="0" id="radio-delivery-slide" checked>
                 <label class="service-slider-tab" for="radio-delivery-slide">Доставка</label>
               </li>
               <li>
-                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-guarantee-slide">
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" value="1" id="radio-guarantee-slide">
                 <label class="service-slider-tab" for="radio-guarantee-slide">Гарантия</label>
               </li>
               <li>
-                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" id="radio-credit-slide">
+                <input class="service-slider-radio visually-hidden" type="radio" name="service-slider-select-tab" value="2" id="radio-credit-slide">
                 <label class="service-slider-tab" for="radio-credit-slide">Кредит</label>
               </li>
             </ul>
@@ -466,7 +466,31 @@
       </button>
     </div>
 
+    <section class="modal-form confirm-form">
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <div class="confirm-message">
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z" fill="#63A63E"/>
+            <path d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z" fill="white"/>
+          </svg>
+          <h2 class="confirm-text">Товар добавлен в корзину!</h2>
+        </div>
+        <div class="button-container">
+          <div class="confirm-group">
+            <input class="execute-button" type="submit" value="Оформить заказ">
+            <button class="continue-button" type="button">Продолжить покупки</button>
+          </div>
+        </div>
+      </form>
+      <button class="modal-close-button" type="button">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+        </svg>
+      </button>
+    </section>
+
     <script src="js/script.min.js"></script>
+    <script src="js/confirm-popup.min.js"></script>
 
   </body>
 </html>

@@ -50,3 +50,66 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// Промо-слайдер
+
+const promoSection = document.querySelector('.promo-catalog');
+// Список кнопок
+const promoTab = promoSection.querySelectorAll('.promo-slider-radio');
+// Список слайдов
+const promoSlide = promoSection.querySelectorAll('.promo-slide');
+// Индекс текущего слайда
+let promoActiveSlide = 1;
+// Кнопки предыдущий и следующий слайд
+const prevSlide = promoSection.querySelector('.promo-slider-prev-button');
+const nextSlide = promoSection.querySelector('.promo-slider-next-button');
+
+for(let i=0; i<promoTab.length; i++) {
+  promoTab[i].addEventListener("change", function (evt) {
+    promoSlide[promoActiveSlide].classList.remove('promo-active-slide');
+    promoActiveSlide = Number(evt.target.value);
+    promoSlide[promoActiveSlide].classList.add('promo-active-slide');
+  });
+};
+
+prevSlide.addEventListener("click", function (evt) {
+  promoSlide[promoActiveSlide].classList.remove('promo-active-slide');
+  if ( promoActiveSlide === 0 ) {
+    promoActiveSlide = promoSlide.length - 1;
+  } else {
+    promoActiveSlide--;
+  }
+
+  promoSlide[promoActiveSlide].classList.add('promo-active-slide');
+  promoTab[promoActiveSlide].checked=true;
+});
+
+nextSlide.addEventListener("click", function (evt) {
+  promoSlide[promoActiveSlide].classList.remove('promo-active-slide');
+  if (promoActiveSlide === promoSlide.length - 1) {
+    promoActiveSlide = 0;
+  } else {
+    promoActiveSlide++;
+  }
+  promoSlide[promoActiveSlide].classList.add('promo-active-slide');
+  promoTab[promoActiveSlide].checked=true;
+});
+
+
+// Слайдер сервисы
+
+const serviceSection = document.querySelector('.service');
+// Список кнопок
+const serviceTab = serviceSection.querySelectorAll('.service-slider-radio');
+// Список слайдов
+const serviceSlide = serviceSection.querySelectorAll('.service-slide');
+// Индекс текущего слайда
+let serviceActiveSlide = 0;
+
+for(let i=0; i<serviceTab.length; i++) {
+  serviceTab[i].addEventListener("change", function (evt) {
+    serviceSlide[serviceActiveSlide].classList.remove('service-active-slide');
+    serviceActiveSlide = Number(evt.target.value);
+    serviceSlide[serviceActiveSlide].classList.add('service-active-slide');
+  });
+};
