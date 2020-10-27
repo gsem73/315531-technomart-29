@@ -1863,10 +1863,8 @@ img {
   grid-area: sort;
 }
 
-goods-panel{
+.goods-panel{
   grid-area: list;
-  padding: 0;
-  margin: 0;
 }
 
 .card-list {
