@@ -82,6 +82,7 @@
 
   --basic-white: #ffffff;
   --transparent-white: rgba(255, 255, 255, 0.5);
+  --smoky-white: #f4f4f4;
 
   --basic-black: #000000;
   --transparent-black: rgba(0, 0, 0, 0.25);
@@ -90,6 +91,7 @@
   --dark-gray: #a9a9a9;
   --silver-gray: #c5c5c5;
   --light-gray:  #e5e5e5;
+  --extra-gray: #eaeaea;
 
   --aluminum-light: #f3f7f8;
   --aluminum-dark: #f1f5f7;
@@ -110,7 +112,10 @@
   --violet-blue: #32425c;
   --night-blue: #293449;
   --sapphire-blue: #161929;
+  --light-sapphire-blue: #212a3a;
   --cobalt-blue: #1d2739;
+  --marengo: #405069;
+  --dark-gray-blue: #283136;
 
   --promo-frosty-sky: #3bbce3;
   --promo-green-apple: #8ed78f;
@@ -122,6 +127,9 @@
   --special-yellow: #ffd180;
   --special-green: #367315;
   --special-gray: #d7dcde;
+
+  --background-gray: #ababab;
+  --shadow-gray: #cfcfcf;
 }
 
 /* Общие классы для всех страниц */
@@ -985,7 +993,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--extra-gray);
   position: relative;
 }
 
@@ -1178,7 +1186,7 @@ img {
 }
 
 .partner-item {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--extra-gray);
   box-sizing: border-box;
   width: 220px;
   height: 145px;
@@ -1324,7 +1332,7 @@ img {
   color: var(--basic-white);
   padding: 14px 22px 18px;
   background-color: var(--violet-blue);
-  box-shadow: inset 0 1px 0 0 #405069, inset 0 -1px 0 0 #293449;
+  box-shadow: inset 0 1px 0 0 var(--marengo), inset 0 -1px 0 0 var(--night-blue);
 }
 
 .service-slider-tab:hover {
@@ -1587,7 +1595,7 @@ img {
   display: block;
   width: 24px;
   height: 24px;
-  background-color: #212a3a;
+  background-color: var(--light-sapphire-blue);
   border-radius: 50%;
 }
 
@@ -1940,9 +1948,9 @@ img {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--background-gray);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--shadow-gray);
   cursor: pointer;
 }
 
@@ -1977,7 +1985,7 @@ img {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
-  color: #283136;
+  color: var(--dark-gray-blue);
   border: none;
   border-radius: 5px;
   background: var(--pearl-dark);
@@ -2178,7 +2186,7 @@ img {
 }
 .button-container {
   padding: 37px 80px;
-  background-color: #f4f4f4;
+  background-color: var(--smoky-white);
 }
 
 .form-control {
