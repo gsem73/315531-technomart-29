@@ -1,87 +1,88 @@
-/* cuprum-regular - latin_cyrillic */
+/* cuprum-regular - latin-cyrillic */
 @font-face {
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/cuprum-v12-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/cuprum-v12-latin-cyrillic-regular.eot"); /* IE9 Compat Modes */
   src: local("Cuprum Regular"), local("Cuprum-Regular"),
-       url("../fonts/cuprum-v12-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/cuprum-v12-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-regular.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/cuprum-v12-latin_cyrillic-regular.svg#Cuprum") format("svg"); /* Legacy iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/cuprum-v12-latin-cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-regular.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-regular.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
-/* cuprum-italic - latin_cyrillic */
+/* cuprum-italic - latin-cyrillic */
 @font-face {
   font-family: "Cuprum";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/cuprum-v12-latin_cyrillic-italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/cuprum-v12-latin-cyrillic-italic.eot"); /* IE9 Compat Modes */
   src: local("Cuprum Italic"), local("Cuprum-Italic"),
-       url("../fonts/cuprum-v12-latin_cyrillic-italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/cuprum-v12-latin_cyrillic-italic.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-italic.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-italic.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/cuprum-v12-latin_cyrillic-italic.svg#Cuprum") format("svg"); /* Legacy iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/cuprum-v12-latin-cyrillic-italic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-italic.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-italic.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-italic.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
-/* cuprum-700italic - latin_cyrillic */
+/* cuprum-700italic - latin-cyrillic */
 @font-face {
   font-family: "Cuprum";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/cuprum-v12-latin_cyrillic-700italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/cuprum-v12-latin-cyrillic-700italic.eot"); /* IE9 Compat Modes */
   src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"),
-       url("../fonts/cuprum-v12-latin_cyrillic-700italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/cuprum-v12-latin_cyrillic-700italic.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-700italic.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-700italic.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/cuprum-v12-latin_cyrillic-700italic.svg#Cuprum") format("svg"); /* Legacy iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-700italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/cuprum-v12-latin-cyrillic-700italic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-700italic.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-700italic.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-700italic.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
-/* cuprum-700 - latin_cyrillic */
+/* cuprum-700 - latin-cyrillic */
 @font-face {
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/cuprum-v12-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/cuprum-v12-latin-cyrillic-700.eot"); /* IE9 Compat Modes */
   src: local("Cuprum Bold"), local("Cuprum-Bold"),
-       url("../fonts/cuprum-v12-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/cuprum-v12-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-700.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/cuprum-v12-latin_cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/cuprum-v12-latin_cyrillic-700.svg#Cuprum") format("svg"); /* Legacy iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/cuprum-v12-latin-cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-700.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/cuprum-v12-latin-cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/cuprum-v12-latin-cyrillic-700.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
 
-/* pt-sans-regular - latin_cyrillic */
+/* pt-sans-regular - latin-cyrillic */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-v12-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/pt-sans-v12-latin-cyrillic-regular.eot"); /* IE9 Compat Modes */
   src: local("PT Sans"), local("PTSans-Regular"),
-       url("../fonts/pt-sans-v12-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/pt-sans-v12-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/pt-sans-v12-latin_cyrillic-regular.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/pt-sans-v12-latin_cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/pt-sans-v12-latin_cyrillic-regular.svg#PTSans") format("svg"); /* Legacy iOS */
+       url("../fonts/pt-sans-v12-latin-cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/pt-sans-v12-latin-cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/pt-sans-v12-latin-cyrillic-regular.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/pt-sans-v12-latin-cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/pt-sans-v12-latin-cyrillic-regular.svg#PTSans") format("svg"); /* Legacy iOS */
 }
-/* pt-sans-700 - latin_cyrillic */
+/* pt-sans-700 - latin-cyrillic */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-v12-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/pt-sans-v12-latin-cyrillic-700.eot"); /* IE9 Compat Modes */
   src: local("PT Sans Bold"), local("PTSans-Bold"),
-       url("../fonts/pt-sans-v12-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("../fonts/pt-sans-v12-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
-       url("../fonts/pt-sans-v12-latin_cyrillic-700.woff") format("woff"), /* Modern Browsers */
-       url("../fonts/pt-sans-v12-latin_cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
-       url("../fonts/pt-sans-v12-latin_cyrillic-700.svg#PTSans") format("svg"); /* Legacy iOS */
+       url("../fonts/pt-sans-v12-latin-cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/pt-sans-v12-latin-cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/pt-sans-v12-latin-cyrillic-700.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/pt-sans-v12-latin-cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/pt-sans-v12-latin-cyrillic-700.svg#PTSans") format("svg"); /* Legacy iOS */
 }
 
 :root {
 
   --basic-white: #ffffff;
   --transparent-white: rgba(255, 255, 255, 0.5);
+  --smoky-white: #f4f4f4;
 
   --basic-black: #000000;
   --transparent-black: rgba(0, 0, 0, 0.25);
@@ -90,6 +91,7 @@
   --dark-gray: #a9a9a9;
   --silver-gray: #c5c5c5;
   --light-gray:  #e5e5e5;
+  --extra-gray: #eaeaea;
 
   --aluminum-light: #f3f7f8;
   --aluminum-dark: #f1f5f7;
@@ -110,7 +112,10 @@
   --violet-blue: #32425c;
   --night-blue: #293449;
   --sapphire-blue: #161929;
+  --light-sapphire-blue: #212a3a;
   --cobalt-blue: #1d2739;
+  --marengo: #405069;
+  --dark-gray-blue: #283136;
 
   --promo-frosty-sky: #3bbce3;
   --promo-green-apple: #8ed78f;
@@ -122,6 +127,9 @@
   --special-yellow: #ffd180;
   --special-green: #367315;
   --special-gray: #d7dcde;
+
+  --background-gray: #ababab;
+  --shadow-gray: #cfcfcf;
 }
 
 /* Общие классы для всех страниц */
@@ -235,6 +243,7 @@ img {
 
 .header-panel {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Логотип */
@@ -546,6 +555,49 @@ img {
   color: var(--silver-gray);
 }
 
+/* Кнопка перехода в личный кабинет */
+.button-cabinet {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-black);
+  height: 45px;
+  border: none;
+  background-color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.button-cabinet:hover {
+  color: var(--basic-red)
+}
+
+.button-cabinet:active {
+  color: var(--silver-gray);
+}
+
+.name-user {
+  margin-left: 21px;
+}
+
+.icon-user {
+  fill: var(--silver-gray);
+  margin-bottom: 1px;
+}
+
+.button-cabinet:hover .icon-user
+  {
+  fill: var(--moderate-blue);
+}
+
+.button-cabinet:active .icon-user
+ {
+  fill: var(--silver-gray);
+}
+
 /* Кнопка выхода */
 
 .button-logout {
@@ -553,15 +605,14 @@ img {
   line-height: 21px;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-black);
-  width: 100%;
   height: 45px;
   border: none;
   background-color: var(--basic-white);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 17px;
 }
 
 
@@ -573,18 +624,15 @@ img {
   color: var(--silver-gray);
 }
 
-.icon-user,
 .icon-logout {
   fill: var(--silver-gray);
 }
 
-.button-logout:hover .icon-user,
 .button-logout:hover .icon-logout
   {
   fill: var(--moderate-blue);
 }
 
-.button-logout:active .icon-user,
 .button-logout:active .icon-logout
  {
   fill: var(--silver-gray);
@@ -597,9 +645,9 @@ img {
   padding: 0;
   margin: 8px 12px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
-  flex-wrap: nowrap;
 }
 
 .user-menu li:not(:last-child) {
@@ -644,6 +692,7 @@ img {
   margin: 0;
   background-color: var(--violet-blue);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   padding-left: 26px;
@@ -796,17 +845,11 @@ img {
   padding: 0;
   margin: 0;
   background-color: var(--violet-blue);
-  width:100%;
-  height: 100%;
 }
 
 .promo-slide {
-  position: absolute;
-  left: 0;
-  top:0;
-  width:100%;
-  height: 100%;
   display: none;
+  min-height: 266px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -950,7 +993,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--extra-gray);
   position: relative;
 }
 
@@ -1143,7 +1186,7 @@ img {
 }
 
 .partner-item {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--extra-gray);
   box-sizing: border-box;
   width: 220px;
   height: 145px;
@@ -1259,11 +1302,7 @@ img {
 
 .service-slide {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-height: 284px;
   background-repeat: no-repeat;
   background-position: right 20px;
 }
@@ -1293,7 +1332,7 @@ img {
   color: var(--basic-white);
   padding: 14px 22px 18px;
   background-color: var(--violet-blue);
-  box-shadow: inset 0 1px 0 0 #405069, inset 0 -1px 0 0 #293449;
+  box-shadow: inset 0 1px 0 0 var(--marengo), inset 0 -1px 0 0 var(--night-blue);
 }
 
 .service-slider-tab:hover {
@@ -1420,6 +1459,7 @@ img {
   padding-top: 36px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -1450,6 +1490,7 @@ img {
   padding:0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   padding-top: 4px;
 }
@@ -1526,6 +1567,7 @@ img {
 .social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -1553,7 +1595,7 @@ img {
   display: block;
   width: 24px;
   height: 24px;
-  background-color: #212a3a;
+  background-color: var(--light-sapphire-blue);
   border-radius: 50%;
 }
 
@@ -1587,6 +1629,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -1638,6 +1681,7 @@ img {
   margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   min-height: 60px;
@@ -1732,6 +1776,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin-right: 16px;
@@ -1824,10 +1869,8 @@ img {
   grid-area: sort;
 }
 
-goods-panel{
+.goods-panel{
   grid-area: list;
-  padding: 0;
-  margin: 0;
 }
 
 .card-list {
@@ -1905,9 +1948,9 @@ goods-panel{
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--background-gray);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--shadow-gray);
   cursor: pointer;
 }
 
@@ -1942,7 +1985,7 @@ goods-panel{
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
-  color: #283136;
+  color: var(--dark-gray-blue);
   border: none;
   border-radius: 5px;
   background: var(--pearl-dark);
@@ -2143,7 +2186,7 @@ goods-panel{
 }
 .button-container {
   padding: 37px 80px;
-  background-color: #f4f4f4;
+  background-color: var(--smoky-white);
 }
 
 .form-control {
