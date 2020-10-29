@@ -693,16 +693,10 @@ img {
   background-color: var(--violet-blue);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  padding-left: 26px;
-  padding-right: 26px;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
   box-shadow: 0 4px 0 0 var(--night-blue);
-}
-
-.header-nav-item {
-  flex-grow: 1;
-  text-align: center;
 }
 
 .header-nav-link {
@@ -711,7 +705,7 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
   display: block;
-  padding: 16px;
+  padding: 16px 28px;
 }
 
 .header-nav-link:hover {
